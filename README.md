@@ -1,71 +1,79 @@
-# Getting Started with Create React App
+# Ethereum Contract Lister
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ethereum Testnet Contracts, Blocks & Transaction explorer built on top of NodeJS - SailsJS with MongoDB on Database and ReactJS on Frontend Inspired by https://ropsten.etherscan.io/
 
-## Available Scripts
 
-In the project directory, you can run:
+![Demo](https://raw.githubusercontent.com/syedMSohaib/Ethereum-contracts-lister/master/screencapture-localhost-3000-2020-10-31-19_08_24.png)
 
-### `yarn start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* **Node** - v10.16.3 (or any latest node version)
+* **npm** - v6.9.0 (or any latest npm version)
+* **Sails** - (Built on 1.4.0)
+* **Infura Api Key** Go to this link "https://infura.io/"
+## Running It Locally
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Clone this repo via to your local machine and install the dependencies by doing the following:
 
-### `yarn test`
+## Note
+"Change the Api key in server/api/BlockController.js with Infura Api you will get after registration
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+```bash
+git clone https://github.com/syedMSohaib/Ethereum-contracts-lister.git
+cd Ethereum-contracts-lister
+npm install
+cd server
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Start the client application & Server in a development environment via:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Client
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm start
+```
 
-### `yarn eject`
+## Server
+```bash
+cd server
+sails lift
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Built With
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* [Sails JS](https://sailsjs.com/) - The MVC framework for Node.js
+*   * [React.js](https://reactjs.org/) - A JavaScript library for building user interfaces *
+* [MongoDB ](https://www.mongodb.com/) - The database for
+modern applications
+* [web3.js](https://github.com/ethereum/web3.js/) - Javascript library used to interact with the Ethereum blockchain 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Contributing
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+> This is an demo project of learning and contributing. I are eagerly looking for contributions from the community.
+> To get started:
 
-## Learn More
+### Step 1
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Option 1**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  - 🍴 Fork this repo!
 
-### Code Splitting
+- **Option 2**
+  - 👯 Clone this repo to your local machine`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Step 2
 
-### Analyzing the Bundle Size
+- **HACK AWAY!** 🔨🔨🔨
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Step 3
 
-### Making a Progressive Web App
+- 🔃 Create a new pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
+## License
 
-### Advanced Configuration
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Ethereum-contracts-lister
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
