@@ -3,6 +3,10 @@ function PromisifyBatchRequest(web3) {
     this.requests = [];
 }
 
+PromisifyBatchRequest.prototype.getRequest = async function(){
+    return this.requests;
+};
+
 PromisifyBatchRequest.prototype.add = function (_request, ...params) {
     let that = this;
     let request = new Promise((resolve, reject) => {

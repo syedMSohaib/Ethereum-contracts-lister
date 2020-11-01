@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 export default function Transaction({ blocks }) {
   var transactions = blocks
@@ -24,7 +26,7 @@ export default function Transaction({ blocks }) {
             id="mCSB_2"
             className="mCS-minimal-dark mCSB_vertical mCSB_outside"
             tabIndex={0}
-            style={{ maxHeight: 400, overflow:'scroll' }}
+            style={{ height: "100%", overflow:'scroll' }}
           >
             <div
               id="mCSB_2_container"
@@ -53,7 +55,7 @@ export default function Transaction({ blocks }) {
                               className="hash-tag hash-tag--xs hash-tag-xs-down--md text-truncate"
                               href="#"
                             >
-                              { item.blockHash}
+                              { item.transactionHash}
                             </a>
                             <span className="d-none d-sm-block small text-secondary">
                               { item.timestamp}
@@ -127,9 +129,10 @@ export default function Transaction({ blocks }) {
           </div>
         </div>
         <div className="card-footer">
-          <a className="btn btn-xs btn-block btn-soft-primary" href="/txs">
+          <Link className="btn btn-xs btn-block btn-soft-primary" to="/transactions">
             View all transactions
-          </a>
+          </Link>
+
         </div>
       </div>
     </div>

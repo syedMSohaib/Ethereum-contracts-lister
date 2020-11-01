@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Block({ blocks }) {
   return (
@@ -122,9 +123,10 @@ export default function Block({ blocks }) {
           </div>
         </div>
         <div className="card-footer">
-          <a className="btn btn-xs btn-block btn-soft-primary" href="/blocks">
+          
+          <Link className="btn btn-xs btn-block btn-soft-primary" to="/blocks">
             View all blocks
-          </a>
+          </Link>
         </div>
       </div>
     </div>

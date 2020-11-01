@@ -54,7 +54,7 @@ modern applications
 > This is an demo project of learning and contributing. I are eagerly looking for contributions from the community.
 > To get started:
 
-### Step 1
+### Step 1`
 
 - **Option 1**
 

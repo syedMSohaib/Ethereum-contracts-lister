@@ -19110,3 +19110,59 @@ body.dark-mode--blockscan .u-header__sub-menu-title:hover:not(.u-header__sub-men
 .white {
     color: white !important;
 }
+
+.loading-indicator:before {
+content: '';
+background: #000000cc;
+position: fixed;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+z-index: 10000000000;
+}
+.loading-indicator:after {
+content: 'Loading ...';
+position: fixed;
+width: 100%;
+top: 50%;
+left: 0;
+z-index: 10001;
+color:white;
+text-align:center;
+font-weight:bold;
+font-size:1.5rem;
+display: block;
+}
+
+.ether-search-heading {            
+    pointer-events: none !important;
+}
+
+.ether-search-heading .ui-menu-item-wrapper,
+.ether-search-heading:hover .ui-menu-item-wrapper {
+    cursor: default !important;
+    border-color: transparent !important;
+}       
+
+.ui-menu-item .ether-search,
+.ui-menu-item:hover .ether-search {
+    background-color: transparent !important;
+    border-color: #e7eaf3 !important;
+}        
+
+.ui-menu-item:hover .ether-search {
+    background-color: #f8fafd !important;
+}
+
+.ui-menu-item .ether-search,
+.ui-menu-item .ether-search {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+body.dark-mode .ui-menu-item:hover .ether-search {
+    background-color: #012137 !important;
+    color: #a2b9c8 !important;
+    border-color: #013558 !important;
+}

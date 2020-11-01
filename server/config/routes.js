@@ -30,6 +30,13 @@ module.exports.routes = {
       allowOrigins: '*',
    },    
   },
+  'get /blocks/search' : {
+    controller: 'block',
+    action: "search",
+    cors: {
+      allowOrigins: '*',
+   },    
+  },  
   'get /blocks/sync' : {
     controller: 'block',
     action: "sync",

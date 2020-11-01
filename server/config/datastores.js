@@ -53,7 +53,10 @@ module.exports.datastores = {
 
 
     adapter: 'sails-mongo',
-    url: "mongodb://ecl:ecl123@cluster0-shard-00-00.fcau8.mongodb.net:27017,cluster0-shard-00-01.fcau8.mongodb.net:27017,cluster0-shard-00-02.fcau8.mongodb.net:27017/ecl?ssl=true&replicaSet=atlas-12meu2-shard-0&authSource=admin&retryWrites=true&w=majority",
+    host: "localhost",
+    port: 27017,
+    database: "ecl",
+    // url: "mongodb://ecl:ecl123@cluster0-shard-00-00.fcau8.mongodb.net:27017,cluster0-shard-00-01.fcau8.mongodb.net:27017,cluster0-shard-00-02.fcau8.mongodb.net:27017/ecl?ssl=true&replicaSet=atlas-12meu2-shard-0&authSource=admin&retryWrites=true&w=majority",
   },
 
 
