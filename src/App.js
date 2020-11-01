@@ -5,11 +5,12 @@ import Footer from './components/Footer'
 import Home from './components/Home'
 import AllBlock from './components/AllBlock'
 import AllTransaction from './components/AllTransaction'
+import { HashRouter, Route, hashHistory } from 'react-router-dom';
 
 export default class App extends Component {
   render() {
     return (
-      <Router>
+      <HashRouter basename={'/ethereum-contract-lister'} history={hashHistory}>
         <Header />
         <Switch>
           <Route path="/blocks">
@@ -23,7 +24,7 @@ export default class App extends Component {
           </Route>
         </Switch>
         <Footer />
-      </Router>
+      </HashRouter>
     )
   }
 }
